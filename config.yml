@@ -2,11 +2,11 @@
 # Usage: http://ruhoh.com/usage/configure/ 
 
 RuhohSpec: '1.0'
-theme : twitter
-production_url : http://sample.com
+theme : hooligan
+production_url : http://notcome.net
 
 posts:
-  permalink: /:categories/:title/
+  permalink: /:title/
   summary_lines: 20
   latest: 10
 

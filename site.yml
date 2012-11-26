@@ -1,16 +1,16 @@
-title : Blog Title
-tagline: Blog Tagline
+title : Writing!
+tagline: No tagline! Just writing!
 author :
-  name : Firstname Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner : feedname
-
+  name : Liu Minsheng
+  email : notcome@me.com
+  github : liums
+  twitter : notcome
+  weibo : notcome
+  
 navigation :
   - archive.html
   - tags.html
   - categories.html
   - pages.html
   - about.md
-  
+
