@@ -3,4 +3,4 @@ title : About Me
 description:
 ---
 
-Hello, how are you?
+<img src="{{urls.media}}/iphoto.jpg">

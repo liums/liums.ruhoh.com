@@ -6,7 +6,7 @@ theme : hooligan
 production_url : http://notcome.net
 
 posts:
-  permalink: /:title/
+  permalink: /:filename/
   summary_lines: 20
   latest: 10
 
