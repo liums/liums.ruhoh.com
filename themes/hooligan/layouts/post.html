@@ -14,13 +14,13 @@ layout : default
     {{ page.date }}
     , in category 
     {{# categories}}
-      <a href="{{ url }}"><strong>{{name}}</strong></a>
+      <a href="{{ name }}"><strong>{{ name }}</strong></a>
     {{/ categories}}
   </h3>
   <h3 align="right">
     Tags: 
     {{# tags}}
-      <a href="{{ url }}">{{name}}</a>
+      <a href="{{ url }}">{{ name }}</a>
     {{/ tags}}
   </h3>
 </div>
