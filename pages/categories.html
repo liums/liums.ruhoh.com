@@ -2,14 +2,8 @@
 description:
 ---
 
-<ul class="tag_box inline">
 {{# categories }}
-  {{> categories_list }}
-{{/ categories }}
-</ul>
-
-{{# categories }}
-  <h2>{{ name }} ({{ count }})</h2>
+  <h2>{{ name }}</h2>
   <ul>
     {{# posts?to_posts }}
       {{> posts_list }}

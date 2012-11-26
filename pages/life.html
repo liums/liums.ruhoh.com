@@ -1,0 +1,18 @@
+---
+description:
+---
+
+{{# db.posts.categories.Life }}
+    {{# posts?to_posts }}
+      <div class="row">
+        <div class="span9">
+          <h2><a href="{{url}}">{{title}}</a> - {{tagline}}</h2>
+        </div>
+        <div class="span3 visible-desktop" align="right"><p>{{ date }}</p></div>
+      </div>
+      <div class="row">
+        <div class="span2" align="right"><p><big>:</big></p></div>
+        <div class="span8"><p><big>{{description}}</big></p></div>
+      </div>
+    {{/ posts?to_posts }}
+{{/ db.posts.categories.Life }}
