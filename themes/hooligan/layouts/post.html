@@ -14,7 +14,7 @@ layout : default
     {{ page.date }}
     , in category 
     {{# categories}}
-      <a href="{{ name }}"><strong>{{ name }}</strong></a>
+      <a id="lower"><strong>{{ name }}</strong></a>
     {{/ categories}}
   </h3>
   <h3 align="right">
@@ -24,6 +24,13 @@ layout : default
     {{/ tags}}
   </h3>
 </div>
+
+<script>
+{{# categories}}
+  var url = "{{ name }}";
+  document.getElementById('lower').href=url.toLowerCase();
+{{/categories}}
+</script>
 
 <div class="row">
   <div class="span12">
