@@ -41,7 +41,7 @@ categories: Computer-Science
     	return root;
 	}
 	
-求最大值，最小值类似就不贴了。
+求最小值，最大值类似就不贴了。
 	
 	template <typename BST_t>
 	BST_t* successor (BST_t *root) {
