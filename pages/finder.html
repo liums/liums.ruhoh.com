@@ -4,17 +4,17 @@ description:
 
 <div class="tabbable">
   <ul class="nav nav-tabs">
-    <li class="active"><a href="#bytime" data-toggle="tab">By Published Time</a></li>
-    <li><a href="#bytags" data-toggle="tab">By Tags</a></li>
-    <li><a href="#bycats" data-toggle="tab">By Categories</a></li>
+    <li><a href="#bytime">By Published Time</a></li>
+    <li class="active"><a href="#bytags">By Tags</a></li>
+    <li><a href="#bycats">By Categories</a></li>
   </ul>
 <div class="tab-content">
-  <div class="tab-pane active" id="bytime">
+  <div class="tab-pane" id="bytime">
     {{# db.posts.collated }}
       {{> posts_collate }}
     {{/ db.posts.collated }}
   </div>
-  <div class="tab-pane" id="bytags">
+  <div class="tab-pane active" id="bytags">
     {{# tags }}
       <h2 id="{{name}}-ref">{{name}}</h2>
       {{# posts?to_posts }}
@@ -34,3 +34,10 @@ description:
   </div>
 </div>
 </div>
+
+<script>
+$('.nav-tabs li a').click(function (e) {
+    $(this).tab('show');
+    $('.tab-content > .tab-pane.active').jScrollPane();
+});
+</script>

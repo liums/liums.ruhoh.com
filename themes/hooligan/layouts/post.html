@@ -19,9 +19,9 @@ layout : default
   </h3>
   <h3 align="right">
     Tags: 
-    {{# tags}}
-      <a href="{{ url }}">{{ name }}</a>
-    {{/ tags}}
+    {{# page.tags?to_tags }}
+      <a href="/finder">{{ name }}</a>
+    {{/ page.tags?to_tags }}
   </h3>
 </div>
 
