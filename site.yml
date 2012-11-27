@@ -8,9 +8,7 @@ author :
   weibo : notcome
 
 navigation :
-  - archive.html
-  - tags.html
-  - categories.html
-  - Life.html
+  - finder.html
+  - life.html
   - about.md
 
