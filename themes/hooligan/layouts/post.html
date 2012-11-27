@@ -13,9 +13,9 @@ layout : default
     Published at
     {{ page.date }}
     , in category 
-    {{# categories}}
-      <a id="lower"><strong>{{ name }}</strong></a>
-    {{/ categories}}
+    {{# page.categories?to_categories }}
+      <a id="lower{{ name }}"><strong>{{ name }}</strong></a>
+    {{/ page.categories?to_categories }}
   </h3>
   <h3 align="right">
     Tags: 
@@ -26,10 +26,10 @@ layout : default
 </div>
 
 <script>
-{{# categories}}
+{{# page.categories?to_categories }}
   var url = "/{{ name }}";
-  document.getElementById('lower').href=url.toLowerCase();
-{{/categories}}
+  document.getElementById('lower{{ name }}').href=url.toLowerCase();
+{{/ page.categories?to_categories }}
 </script>
 
 <div class="row">
