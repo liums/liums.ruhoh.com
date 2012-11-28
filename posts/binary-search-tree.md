@@ -32,7 +32,7 @@ categories: Computer-Science
     	return root;
 	}
 	
-这个是查找，如果没找到返回nullptr，当然这次只是学习不是产品级的所以后面其他相关代码都没做检测。
+这是查找，如果没找到返回nullptr，当然这次只是学习不是产品级的玩意，返回啥都无所谓。
 
 	template <typename BST_t>
 		BST_t* minimum (BST_t *root) {
@@ -41,7 +41,7 @@ categories: Computer-Science
     	return root;
 	}
 	
-求最小值，最大值类似就不贴了。
+这是求最小值，求最大值类似就不贴了。
 	
 	template <typename BST_t>
 	BST_t* successor (BST_t *root) {
@@ -53,7 +53,7 @@ categories: Computer-Science
     	return t;
 	}
 	
-求后继，前驱类似也不贴了。
+这是求后继，求前驱类似也不贴了。
 
 最基本的BST
 ===
